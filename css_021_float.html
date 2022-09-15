@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /*
+        float
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다.
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠 있다. 
+        */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both; /* float 해제 */
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        SK그룹이 올해 상반기 10건의 인수·합병(M&A)에 3조1004억원을 투자한 것으로
+        나타났다. 공정거래위원회 지정 76개 기업집단 기준으로 M&A 투자 규모와
+        횟수에서 1위다. 이어 △DL그룹(1조8643억원·1건) △한진그룹(1조8000억원·1건)
+        △포스코그룹(1조1068억원·2건)도 1조원 이상을 투자했다. 14일
+        기업데이터연구소 CEO스코어의 2019~2022년 상반기 M&A 현황 조사 결과다.
+        2019년부터 올해 상반기까지 대기업들은 447건의 M&A를 진행했으며, 투자
+        금액은 68조9960억원으로 집계됐다. 그룹별로 SK그룹이 19조6868억원(42건)을
+        투입해 M&A에 가장 적극적인 것으로 나타났다. 이어 △넷마블(5조83억원·16건)
+        △신세계그룹(4조8099억원·10건) △CJ그룹(3조8042억원·17건)
+        △LG그룹(2조6632억원·24건)도 M&A를 활발히 진행한 것으로 집계됐다. 국내
+        500대 기업 중 2022년 반기보고서를 제출한 353개 기업을 대상으로 M&A
+        현황을 조사한 결과 올해 상반기 87건의 M&A가 이뤄졌으며 투자 금액은
+        15조357억원으로 집계됐다.
+      </p>
+    </div>
+  </body>
+</html>
