@@ -1,0 +1,30 @@
+/*common.css*/
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+body {
+  font-family: "맑은 고딕", "돋움";
+  font-size: 12px;
+  color: #444444;
+  background-color: #f2f0f0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.clear {
+  clear: both;
+}
+
+/*--헤더--------------------------------------------*/
